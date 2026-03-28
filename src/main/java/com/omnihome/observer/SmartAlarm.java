@@ -3,7 +3,7 @@ package observer;
 import java.util.HashMap;
 import java.util.Map;
 
-import strategy.AllertStrategy;
+import strategy.AlertStrategy;
 import strategy.LoudSirenStrategy;
 import strategy.SilentPushStrategy;
 
@@ -17,9 +17,9 @@ import strategy.SilentPushStrategy;
 
 public class SmartAlarm implements Observer{
     
-    private AllertStrategy currentStrategy;
+    private AlertStrategy currentStrategy;
 
-    private Map<String, AllertStrategy> strategyRegistry = new HashMap<>();
+    private Map<String, AlertStrategy> strategyRegistry = new HashMap<>();
 
     private boolean armed = false;
 

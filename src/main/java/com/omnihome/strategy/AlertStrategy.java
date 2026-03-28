@@ -1,6 +1,6 @@
 package strategy;
 
-public interface AllertStrategy {
+public interface AlertStrategy {
     void executeAlert();
     
 } 
